@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .container {
+    margin: 30px auto;
+    width: 350px;
+    text-align: center ;
+  }
+  .btn {
+    cursor: pointer;
+    background-color: #9c88ff;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+  }
+
+.timer-control {
+    width: fit-content;
+    border-radius: 1rem;
+    background-color: rgb(101, 134, 101);
+    box-shadow: var(--box-shadow);
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    cursor: pointer;
+    height: fit-content;
+}
+.timer-control:active {
+    transform: scale(1.02);
+}
+
+.timer {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.time {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+input{
+    border: 0.1rem solid black;
+    width: fit-content;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    /* cursor: pointer; */
+    height: fit-content;
+}
+.entries {
+    width: fit-content;
+    font-size: 1.2rem;
+    color: rgb(131, 13, 249);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    text-align: center;
+}
+.entry {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    background-color: rgb(114, 168, 193);
+    padding: 0rem 0.4rem 0rem 0.4rem;
+}
+
+.entry:nth-child(odd) {
+    background-color: rgb(183, 212, 222);
+}
+
+.entries-handling-entries {
+    background-color: rgb(25, 54, 84) !important;
+}
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  
+  h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin: 40px 0 10px;
+  }
+  
+  h4 {
+    margin: 0;
+    text-transform: uppercase;
+  }

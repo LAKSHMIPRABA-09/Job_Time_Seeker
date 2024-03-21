@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css">
+</head>
+
+<body>
+    <div class="container">
+    <!-- Input Fields -->
+        <!-- Include input(text) field for task -->
+        <input type="text" placeholder="Task" id="task" name="task" required>
+        <br><br>
+        <!-- Include input(text) field for description -->
+        <input type="text" name="description" id="description" placeholder="Description" required>
+    <!-- Timer -->
+    <div class="timer">
+        <!-- Timer control -->
+        <div class="timer-control" id="timer-control">Start</div>
+        &nbsp;
+
+        <p class="time" id="hr">00</p>
+        <p class="time">:</p>
+        <p class="time" id="min">00</p>
+        <p class="time">:</p>
+        <p class="time" id="sec">00</p>
+    </div>
+
+    <!-- Entries -->
+    <div class="entries" id="entries">
+        <!-- You should add entries here dynamically using JS -->
+        <div class="entries-handling entry">
+            <div>Task</div>
+            <div>Description</div>
+            <div>Duration</div>
+        </div>
+        <div class="entry">
+            <div>Meeting</div>
+            <div>Client Meeting</div>
+            <div>00.58.56</div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="module" src="./task.js"></script>
+
+
+</html>
